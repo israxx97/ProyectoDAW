@@ -1,0 +1,21 @@
+h1 {
+    border-top: 3px solid #cc9900;
+    border-bottom: 3px solid #cc9900;
+    margin-top: 20px;
+    color: #3399ff;
+}
+
+h2 {
+    color: #999999; 
+}
+
+.volver {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.imgVolver {
+    /* width: 40px;
+    height: 40px; */
+}

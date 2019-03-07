@@ -1,89 +1,70 @@
-/* Made with love by Mutiullah Samim*/
-
-@import url('https://fonts.googleapis.com/css?family=Numans');
-
-html,body{
-background-image: url(../images/bg.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-height: 100%;
-font-family: 'Numans', sans-serif;
+body {
+  font-family: poppins;
 }
 
-.container{
-height: 100%;
-align-content: center;
+header .carousel-inner .item {
+  height: 90vh;
 }
 
-.card{
-height: 370px;
-margin-top: auto;
-margin-bottom: auto;
-width: 400px;
-background-color: rgba(0,0,0,0.5) !important;
+.navbar-inverse {
+  background-color: transparent;
+  border-color: transparent;
 }
 
-.social_icon span{
-font-size: 60px;
-margin-left: 10px;
-color: #FFC312;
+.navbar-inverse .navbar-brand {
+  color: #fff;
+  font-size: 40px;
+  padding: 40px 15px;
+  font-weight: 900;
 }
 
-.social_icon span:hover{
-color: white;
-cursor: pointer;
+.nav.navbar-nav.navbar-right {
+  margin: 25px 0;
 }
 
-.card-header h3{
-color: white;
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
 }
 
-.social_icon{
-position: absolute;
-right: 20px;
-top: -45px;
+.banner {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-.input-group-prepend span{
-width: 50px;
-background-color: #FFC312;
-color: black;
-border:0 !important;
+.carousel-caption {
+  padding-bottom: 250px;
+  font-family: poppins;
 }
 
-input:focus{
-outline: 0 0 0 0  !important;
-box-shadow: 0 0 0 0 !important;
-
+.carousel-caption h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.remember{
-color: white;
+.carousel-caption h2 span {
+  color: #edbb00;
 }
 
-.remember input
-{
-width: 20px;
-height: 20px;
-margin-left: 15px;
-margin-right: 5px;
+.carousel-caption a {
+  background: #edbb00;
+  padding: 15px 35px;
+  display: inline-block;
+  margin-top: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 25px;
 }
 
-.login_btn{
-color: black;
-background-color: #FFC312;
-width: 100px;
+.carousel-control.right {
+  background-image: none;
 }
 
-.login_btn:hover{
-color: black;
-background-color: white;
-}
-
-.links{
-color: white;
-}
-
-.links a{
-margin-left: 4px;
+.carousel-indicators .active {
+  background-color: #edbb00;
+  border-color: #edbb00;
 }
