@@ -52,7 +52,7 @@
                 </nav>
             </div> -->
 
-            <div style="background: url(webroot/images/o-SOCCER-BALL-facebook.jpg)" class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+            <div style="background: url(webroot/images/monitor-1307227_1920.jpg)" class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
                 <div class="col-md-6 px-0">
                     <h1 class="display-4 font-italic">DAW - Israel García Cabañeros</h1>
                     <!-- <p class="lead my-3">Este blog ha sido construido para el proyecto de empresa del CEO de Forobet, Israel García Cabañeros.</p> -->
@@ -97,50 +97,82 @@
 
                     <div class="blog-post">
                         <h2 class="blog-post-title"><a href="html/U00_A00.html">U00 - A00</a></h2>
-                        <p class="blog-post-meta">07/03/2019, 10:49</p>
-                        <p>En esta práctica inicial vamos a repasar los conceptos básicos TCP/IP, además de las arquitecturas y tecnologías web.</p>
+                        <p class="blog-post-meta">Última actualización: 07/03/2019, 16:40</p>
+                        <p>En esta práctica inicial vamos a repasar los conceptos básicos TCP/IP.</p>
+                        <p>También repasaremos conceptos de arquitecturas y tecnologías web.</p>
                     </div>
 
                     <div class="blog-post">
-                        <h2 class="blog-post-title"><a href="U01_A01.html">U01 - A01</a></h2>
-                        <p class="blog-post-meta">//2019, :</p>
+                        <h2 class="blog-post-title"><a href="html/U01_A01.html">U01 - A01</a></h2>
+                        <p class="blog-post-meta">Última actualización: 07/03/2019, 17:36</p>
                         <p>En esta práctica vamos a documentar las características de la máquina anfitriona del centro, indicando entre otras cosas el Sistema Operativo utilizado, Memoria RAM, usuarios, etc...</p>
                         <p>Además, encontraremos el software usado en este ciclo para el desarrollo (IDEs, navegadores, etc...)</p>
                     </div>
 
                     <div class="blog-post">
-                        <h2 class="blog-post-title"><a href="U01_A02.html">U01 - A02</a></h2>
-                        <p class="blog-post-meta">//2019, :</p>
+                        <h2 class="blog-post-title"><a href="html/U01_A02.html">U01 - A02</a></h2>
+                        <p class="blog-post-meta">Última actualización: Aún no se ha subido ningún fichero.</p>
+                        <p>En esta práctica documentaremos la instalación y configuración de un servidor web de desarrollo en Windows 10 Enterprise de 64 bits.</p>
+                        <p>Se pide preparar el equipo de desarrollo y servidor web de desarrollo utilizando una plataforma web libre, en este caso usaremos XAMPP.</p>
+                        <p>Tendremos en cuenta que la IP estática es 192.168.3.50 + X, siendo X el número de hosts del ordenador anfitrión.</p>
                     </div>
 
                     <div class="blog-post">
-                        <h2 class="blog-post-title"><a href="U02_A01.html">U02 - A01</a></h2>
-                        <p class="blog-post-meta">//2019, :</p>
+                        <h2 class="blog-post-title"><a href="html/U02_A01.html">U02 - A01</a></h2>
+                        <p class="blog-post-meta">Última actualización: Aún no se ha subido ningún fichero.</p>
+                        <p>En esta práctica se pide documentar la instalación y documentación de un servidor con Apache + PHP + MySQL en Ubuntu Server 18.04 LTS.</p>
+                        <p>Se pide preparar la plataforma libre LAMPP.</p>
+                        <p>Tendremos en cuenta que la IP estática es 192.168.3.100 + X, siendo X el número de hosts del ordenador anfitrión.</p>
+                        <p>Otros requisitos son:</p>
+                        <ul>
+                            <li>Disco de 500GB dinámicos con las siguientes particiones:</li>
+                            <ul>
+                                <li>/var    ext4    396GB</li>
+                                <li>/       ext4    100GB</li>
+                                <li>/boot   swap    3,997GB</li>
+                            </ul>
+                        </ul>
                     </div>
 
                     <div class="blog-post">
-                        <h2 class="blog-post-title"><a href="U02_A02.html">U02 - A02</a></h2>
-                        <p class="blog-post-meta">//2019, :</p>
+                        <h2 class="blog-post-title"><a href="html/U02_A02.html">U02 - A02</a></h2>
+                        <p class="blog-post-meta">Última actualización: Aún no se ha subido ningún fichero.</p>
+                        <p>En esta práctica realizaremos actividades prácticas sobre configuración y administración de servidores web.</p>
+                        <p>Realizaremos los siguientes ejercicios:</p>
+                        <ol>
+                            <li>Comando a2query.</li>
+                            <li>Directiva ErrorDocument.</li>
+                            <li>Directiva Alias.</li>
+                            <li>Directiva Redirect.</li>
+                            <li>Resolución de nombre /etc/hosts.</li>
+                            <li>Sitios virtuales basados en nombre.</li>
+                            <li>Autenticación BASIC.</li>
+                            <li>Autenticación DIGEST.</li>
+                        </ol>
                     </div>
 
                     <div class="blog-post">
-                        <h2 class="blog-post-title"><a href="U02_A03.html">U02 - A03</a></h2>
-                        <p class="blog-post-meta">//2019, :</p>
+                        <h2 class="blog-post-title"><a href="html/U02_A03.html">U02 - A03</a></h2>
+                        <p class="blog-post-meta">Última actualización: Aún no se ha subido ningún fichero.</p>
+                        <p>En esta práctica encontraremos una breve descripción de los comandos, módulos y directivas usadas en el servidor web de Apache durante su configuración y administración.</p>
                     </div>
 
                     <div class="blog-post">
-                        <h2 class="blog-post-title"><a href="U02_A04.html">U02 - A04</a></h2>
-                        <p class="blog-post-meta">//2019, :</p>
+                        <h2 class="blog-post-title"><a href="html/U02_A04.html">U02 - A04</a></h2>
+                        <p class="blog-post-meta">Última actualización: Aún no se ha subido ningún fichero.</p>
+                        <p>En esta práctica configuraremos varios sitios virtuales con un archivo index.html, y accederemos a estos sitios con HTTP y HTTPS.</p>
                     </div>
 
                     <div class="blog-post">
-                        <h2 class="blog-post-title"><a href="U04_A01.html">U04 - A01</a></h2>
-                        <p class="blog-post-meta">//2019, :</p>
+                        <h2 class="blog-post-title"><a href="html/U04_A01.html">U04 - A01</a></h2>
+                        <p class="blog-post-meta">Última actualización: Aún no se ha subido ningún fichero.</p>
+                        <p>En esta práctica responderemos a unas cuestiones sobre DNS y dominios.</p>
                     </div>
 
                     <div class="blog-post">
-                        <h2 class="blog-post-title"><a href="U04_A02.html">U04 - A02</a></h2>
-                        <p class="blog-post-meta">//2019, :</p>
+                        <h2 class="blog-post-title"><a href="html/U04_A02.html">U04 - A02</a></h2>
+                        <p class="blog-post-meta">Última actualización: Aún no se ha subido ningún fichero.</p>
+                        <p>En esta práctica documentaremos la instalación y configuración del servicio DNS en Ubuntu.</p>
                     </div>
                 </div>   
 

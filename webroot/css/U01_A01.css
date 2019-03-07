@@ -1,0 +1,26 @@
+h1 {
+    border-top: 3px solid #cc9900;
+    border-bottom: 3px solid #cc9900;
+    margin-top: 20px;
+    color: #3399ff;
+}
+
+.titulo {
+    color: white;
+    background-color: #ff2b12;
+    width: 33%;
+}
+
+table {
+    border-color: white; 
+}
+
+.par {
+    background-color: #ff8080;
+    width: 33%;
+}
+
+.impar {
+    background-color: #ffe6e6;
+    width: 33%;
+}
