@@ -111,15 +111,15 @@
 
                     <div class="blog-post">
                         <h2 class="blog-post-title"><a href="html/U01_A02.html">U01 - A02</a></h2>
-                        <p class="blog-post-meta">Última actualización: Aún no se ha subido ningún fichero.</p>
-                        <p>En esta práctica documentaremos la instalación y configuración de un servidor web de desarrollo en Windows 10 Enterprise de 64 bits.</p>
+                        <p class="blog-post-meta">Última actualización: 10/03/2019, 21:08</p>
+                        <p>En esta práctica documentaremos la instalación y configuración de un servidor web de desarrollo en Windows 7 Enterprise de 64 bits.</p>
                         <p>Se pide preparar el equipo de desarrollo y servidor web de desarrollo utilizando una plataforma web libre, en este caso usaremos XAMPP.</p>
                         <p>Tendremos en cuenta que la IP estática es 192.168.3.50 + X, siendo X el número de hosts del ordenador anfitrión.</p>
                     </div>
 
                     <div class="blog-post">
                         <h2 class="blog-post-title"><a href="html/U02_A01.html">U02 - A01</a></h2>
-                        <p class="blog-post-meta">Última actualización: Aún no se ha subido ningún fichero.</p>
+                        <p class="blog-post-meta">Última actualización: 20/03/2019, 00:09</p>
                         <p>En esta práctica se pide documentar la instalación y documentación de un servidor con Apache + PHP + MySQL en Ubuntu Server 18.04 LTS.</p>
                         <p>Se pide preparar la plataforma libre LAMPP.</p>
                         <p>Tendremos en cuenta que la IP estática es 192.168.3.100 + X, siendo X el número de hosts del ordenador anfitrión.</p>
@@ -136,10 +136,12 @@
 
                     <div class="blog-post">
                         <h2 class="blog-post-title"><a href="html/U02_A02.html">U02 - A02</a></h2>
-                        <p class="blog-post-meta">Última actualización: Aún no se ha subido ningún fichero.</p>
+                        <p class="blog-post-meta">Última actualización: 21/03/2019, 12:59</p>
                         <p>En esta práctica realizaremos actividades prácticas sobre configuración y administración de servidores web.</p>
                         <p>Realizaremos los siguientes ejercicios:</p>
                         <ol>
+                            <li>Estructura de directorios y ficheros Apache2.</li>
+                            <li>Requerimientos del servidor.</li>
                             <li>Comando a2query.</li>
                             <li>Directiva ErrorDocument.</li>
                             <li>Directiva Alias.</li>
@@ -204,7 +206,7 @@
                         <h4 class="font-italic">Repositorio en...</h4>
                         <ol class="list-unstyled">
                             <!-- <li><a href="https://www.instagram.com/forobet.oficial/">Instagram</a></li> -->
-                            <li><a href="https://github.com/israxx97/ProyectoDAW">GitHub</a></li>
+                            <li><a href="https://github.com/israxx97/ProyectoDAW" target="blank"><img style="width: 15px; height: 15px;" src="./webroot/images/github-logo.png" alt="logo_github">&nbsp;GitHub</a></li>
                         </ol>
                     </div>
                 </aside><!-- /.blog-sidebar -->

@@ -10,46 +10,194 @@
     <body class="container">
         <h1 id="indice" class="text-center">ÍNDICE - U02 - A02</h1>
         <section class="primeraSection">
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado1">1.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado2">2.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado3">3.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado4">4.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado5">5.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado6">6.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado7">7.- <em></em></a></p>
+            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado1">1.- Estructura de directorios y ficheros Apache2.<em></em></a></p>
+            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado2">2.- Requerimientos del servidor.<em></em></a></p>
+            <ul class="lista">
+                <li class="elemento">
+                    HTTP/1.1.
+                </li>
+                <li class="elemento">
+                    SSL.
+                </li>
+                <li class="elemento">
+                    Redireccinamiento.
+                </li>
+                <li class="elemento">
+                    Acceso FTP a los archivos log de acceso, errores,...
+                </li>
+                <li class="elemento">
+                    Soporte PHP.
+                </li>
+                <li class="elemento">
+                    Bases de datos MySQL v14.14 distribución 5.7.25.
+                </li>
+                <li class="elemento">
+                    Configuración de directorios mediante .htaccess.
+                </li>
+                <li class="elemento">
+                    Configuracion mod_rewrite.
+                </li>
+            </ul>
+            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado3">3.- Comando a2query.<em></em></a></p>
+            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado4">4.- Directiva ErrorDocument.<em></em></a></p>
+            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado5">5.- Directiva Alias.<em></em></a></p>
+            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado6">6.- Directiva Redirect.<em></em></a></p>
+            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado7">7.- Resolución de nombre /etc/hosts.<em></em></a></p>
+            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado7">8.- Sitios virtuales basados en nombre.<em></em></a></p>
+            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado7">9.- Autenticación BASIC.<em></em></a></p>
+            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado7">10.- Autenticación DIGEST.<em></em></a></p>
         </section>
         <section class="segundaSection">
-            <p class="ejercicio1" id="ejercicioEnunciado1">1.- </p>
+            <p class="ejercicio1" id="ejercicioEnunciado1">1.- Estructura de directorios y ficheros Apache2.</p>
+            <ul class="lista">
+                <li class="elemento">
+                    La estructura general de apache2 es la siguiente.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image14.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">A continuación, se explicará brevemente para que sirve cada uno de estos archivos:
+                    <ul class="lista">
+                        <li class="elemento"></li>
+                        <li class="elemento"></li>
+                        <li class="elemento"></li>
+                        <li class="elemento"></li>
+                        <li class="elemento"></li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="ejercicio2" id="ejercicioEnunciado2">2.- Requerimientos del servidor.</p>
+            <ul class="lista">
+                <li class="elemento">
+                    HTTP/1.1.
+                </li>
+                <li class="elemento">
+                    SSL.
+                </li>
+                <li class="elemento">
+                    Redireccinamiento.
+                </li>
+                <li class="elemento">
+                    Acceso FTP a los archivos log de acceso, errores,...
+                    <ul class="lista">
+                        <li class="elemento">
+                            En el el siguiente fichero añadiremos dos nuevas líneas para poder ver el error.log y el access.log.
+                        </li>
+                    </ul>
+                    <p style="color: red;">ATENCIÓN: Deberemos crear el directorio logs en /var/www/html, ambos archivos se crearán automáticamente en el direcorio que acabamos de crear.</p>
+                    <img src="../webroot/images/U02_A02/image1.PNG" alt="image">
+                    <ul class="lista">
+                        <li class="elemento">
+                            Quedará de la siguiente forma al añadir dichas lineas.
+                        </li>
+                    </ul>
+                    <img src="../webroot/images/U02_A02/image2.PNG" alt="image">
+                </li>
+                <li class="elemento">
+                    Soporte PHP.
+                </li>
+                <li class="elemento">
+                    Bases de datos MySQL v14.14 distribución 5.7.25.
+                </li>
+                <li class="elemento">
+                    Configuración de directorios mediante .htaccess.
+                    <ul class="lista">
+                        <li class="elemento">
+                            Para que todos los sitios virtuales puedan leer el fichero de configuración de apache .htaccess, editar el archivo /etc/apache2/apache2.conf y buscar la parte de la siguiente imagen.
+                        </li>
+                    </ul>
+                    <img src="../webroot/images/U02_A02/image3.PNG" alt="image">
+                    <ul class="lista">
+                        <li class="elemento">
+                            Lo dejaremos de la siguiente forma.
+                        </li>
+                    </ul>
+                    <img src="../webroot/images/U02_A02/image4.PNG" alt="image">
+                    <p style="color: red">ATENCIÓN: Es importante reiniciar el servidor de apache después de estos pasos para que se produzcan los cambios, lo haremos con <b>sudo service apache2 restart</b>.</p>
+                    <ul class="lista">
+                        <li class="elemento">
+                            Creamos el directorio page_error en la siguiente ruta.
+                        </li>
+                    </ul>
+                    <img src="../webroot/images/U02_A02/image7.PNG" alt="image">
+                    <ul class="lista">
+                        <li class="elemento">
+                            Creamos el archivo html que queramos que se muestre cuando salte el error 404 dentro del directorio page_error.
+                        </li>
+                    </ul>
+                    <img src="../webroot/images/U02_A02/image8.PNG" alt="image">
+                    <ul class="lista">
+                        <li class="elemento">
+                            Editamos el archivo html creado en el punto anterior.
+                        </li>
+                    </ul>
+                    <img src="../webroot/images/U02_A02/image9.PNG" alt="image">
+                    <ul class="lista">
+                        <li class="elemento">
+                            Lo hacemos como html normal, en este caso solo haremos que nos muestre un h1.
+                        </li>
+                    </ul>
+                    <img src="../webroot/images/U02_A02/image10.PNG" alt="image">
+                    <ul class="lista">
+                        <li class="elemento">
+                            Crearemos y modificaremos .htaccess en la siguiente ruta.
+                        </li>
+                    </ul>
+                    <img src="../webroot/images/U02_A02/image11.PNG" alt="image">
+                    <ul class="lista">
+                        <li class="elemento">
+                            Escribiremos en .htaccess el siguiente contenido, en este caso controlaremos el error 404, pero podemos hacer con cualquier error cambiando el 404 por otro y la ruta del html que queramos mostrar.
+                        </li>
+                    </ul>
+                    <img src="../webroot/images/U02_A02/image12.PNG" alt="image">
+                    <ul class="lista">
+                        <li class="elemento">
+                            Accedemos a nuestro servidor desde el navegador con un path que no exista, nos mostrará el archivo html creado anteriormente.
+                        </li>
+                    </ul>
+                    <img src="../webroot/images/U02_A02/image13.PNG" alt="image">
+
+                </li>
+                <li class="elemento">
+                    Configuracion mod_rewrite.
+                </li>
+            </ul>
+            <p class="ejercicio3" id="ejercicioEnunciado3">3.- Comando a2query.</p>
             <ul class="lista">
                 <li class="elemento"></li>
             </ul>
-            
-            <p class="ejercicio2" id="ejercicioEnunciado2">2.- </p>
+
+            <p class="ejercicio4" id="ejercicioEnunciado4">4.- Directiva ErrorDocument.</p>
             <ul class="lista">
                 <li class="elemento"></li>
             </ul>
-            
-            <p class="ejercicio3" id="ejercicioEnunciado3">3.- </p>
+
+            <p class="ejercicio5" id="ejercicioEnunciado5">5.- Directiva Alias.</p>
             <ul class="lista">
                 <li class="elemento"></li>
             </ul>
-            
-            <p class="ejercicio4" id="ejercicioEnunciado4">4.- </p>
+
+            <p class="ejercicio6" id="ejercicioEnunciado6">6.- Directiva Redirect.</p>
             <ul class="lista">
                 <li class="elemento"></li>
             </ul>
-            
-            <p class="ejercicio5" id="ejercicioEnunciado5">5.- </p>
+
+            <p class="ejercicio7" id="ejercicioEnunciado7">7.- Resolución de nombre /etc/hosts.</p>
             <ul class="lista">
                 <li class="elemento"></li>
             </ul>
-            
-            <p class="ejercicio6" id="ejercicioEnunciado6">6.- </p>
+
+            <p class="ejercicio8" id="ejercicioEnunciado8">8.- Sitios virtuales basados en nombre.</p>
             <ul class="lista">
                 <li class="elemento"></li>
             </ul>
-            
-            <p class="ejercicio7" id="ejercicioEnunciado7">7.- </p>
+
+            <p class="ejercicio9" id="ejercicioEnunciado9">9.- Autenticación BASIC.</p>
+            <ul class="lista">
+                <li class="elemento"></li>
+            </ul>
+
+            <p class="ejercicio10" id="ejercicioEnunciado10">10.- Autenticación REDIRECT.</p>
             <ul class="lista">
                 <li class="elemento"></li>
             </ul>

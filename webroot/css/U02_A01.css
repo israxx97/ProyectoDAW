@@ -4,3 +4,8 @@ h1 {
     margin-top: 20px;
     color: #3399ff;
 }
+
+img {
+    margin: 0 auto;
+    display: block;
+}
