@@ -10,49 +10,175 @@
     <body class="container">
         <h1 id="indice" class="text-center">ÍNDICE - U02 - A03</h1>
         <section class="primeraSection">
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado1">1.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado2">2.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado3">3.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado4">4.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado5">5.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado6">6.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado7">7.- <em></em></a></p>
+            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado1"><em>1.- Comandos, módulos y directivas de Apache Server.</em></a></p>
         </section>
         <section class="segundaSection">
-            <p class="ejercicio1" id="ejercicioEnunciado1">1.- </p>
+            <p class="ejercicio1" id="ejercicioEnunciado1">1.- Comandos, módulos y directivas de Apache Server.</p>
+            <h3>Comandos</h3>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">apt install apache2 (el -get se quita a partir de la v18.04 de Ubuntu).
+                <ul class="lista">
+                  <li class="elemento">Comando usado para instalar Apache.</li>
+                </ul>
+              </li>
             </ul>
-            
-            <p class="ejercicio2" id="ejercicioEnunciado2">2.- </p>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">a2ensite dominio.com
+                <ul class="lista">
+                  <li class="elemento">Comando usado para activar un dominio si este dominio ha sido creado anteriormente.</li>
+                </ul>
+              </li>
             </ul>
-            
-            <p class="ejercicio3" id="ejercicioEnunciado3">3.- </p>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">a2dissite dominio.com.conf
+                <ul class="lista">
+                  <li class="elemento">Comando usado para eliminar un dominio activo.</li>
+                </ul>
+              </li>
             </ul>
-            
-            <p class="ejercicio4" id="ejercicioEnunciado4">4.- </p>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">/etc/init.d/apache2 reload o service reload.
+                <ul class="lista">
+                  <li class="elemento">Comando usado para recargar sin reiniciar el servicio de Apache.</li>
+                </ul>
+              </li>
             </ul>
-            
-            <p class="ejercicio5" id="ejercicioEnunciado5">5.- </p>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">/etc/init.d/apache2 restart o service restart.
+                <ul class="lista">
+                  <li class="elemento">Comando usado para reiniciar el servicio de Apache.</li>
+                </ul>
+              </li>
             </ul>
-            
-            <p class="ejercicio6" id="ejercicioEnunciado6">6.- </p>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">/etc/init.d/apache2 stop o service stop.
+                <ul class="lista">
+                  <li class="elemento">Comando usado para parar el servicio de Apache.</li>
+                </ul>
+              </li>
             </ul>
-            
-            <p class="ejercicio7" id="ejercicioEnunciado7">7.- </p>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">/etc/init.d/apache2 start o service start.
+                <ul class="lista">
+                  <li class="elemento">Comando usado para arrancar el servicio de Apache.</li>
+                </ul>
+              </li>
             </ul>
+            <ul class="lista">
+              <li class="elemento">/etc/init.d/apache2 status o service status.
+                <ul class="lista">
+                  <li class="elemento">Comando usado para ver si se encuentra activo el servicio de Apache.</li>
+                </ul>
+              </li>
+            </ul>
+            <h3>Módulos</h3>
+            <ul class="lista">
+              <li class="elemento">/etc/apache2/sites-available
+                <ul class="lista">
+                  <li class="elemento">En este archivo se encuentran los módulos disponibles de Apache.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lista">
+              <li class="elemento">/etc/apache2/sites-enabled
+                <ul class="lista">
+                  <li class="elemento">En este archivo se encuentran los módulos activos de Apache.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lista">
+              <li class="elemento">/etc/apache2/apache2.conf
+                <ul class="lista">
+                  <li class="elemento">En este archivo se encuentra la configuración de Apache.</li>
+                </ul>
+              </li>
+            </ul>
+            <h3>Directivas</h3>
+            <ul class="lista">
+              <li class="elemento">ServerRoot
+                <ul class="lista">
+                  <li class="elemento">Esta directiva especifica el directorio de nivel superior que tiene el contenido web</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lista">
+              <li class="elemento">IfModule
+                <ul class="lista">
+                  <li class="elemento">Las etiquetas &lt;IfModule&gt;&lt;/IfModule&gt; crean un contenedor condicional que sólo es activado si el módulo especificado es cargado.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lista">
+              <li class="elemento">Listen
+                <ul class="lista">
+                  <li class="elemento">Esta directiva identifica los puertos en los que el sevidor Web aceptará las peticiones entrantes.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lista">
+              <li class="elemento">Include
+                <ul class="lista">
+                  <li class="elemento">Esta directiva permite que se incluyan otros archivos de configuración en el tiempo de ejecución.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lista">
+              <li class="elemento">LoadModule
+                <ul class="lista">
+                  <li class="elemento">Esta directiva es usada para cargar en módulos Dynamic Shared Object (DSO).</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lista">
+              <li class="elemento">ServerName
+                <ul class="lista">
+                  <li class="elemento">Es directiva es usada para configurar un nombre de servidor y un número de puerto para el servidor.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lista">
+              <li class="elemento">DocumentRoot
+                <ul class="lista">
+                  <li class="elemento">Esta directiva se usa para indicar el directorio que contiene la mayoría de los archivos HTML que se entregarán en respuesta a peticiones.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lista">
+              <li class="elemento">Directory
+                <ul class="lista">
+                  <li class="elemento">Las etiquetas &lt;Directory /path/to/directory&gt;&lt;/Directory&gt; se usan para crear un contenedor que se utiliza para cercar un grupo de directivas de configuración que sólo se aplican a un directorio y sus subdirectorios específicos.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lista">
+              <li class="elemento">AllowOverride
+                <ul class="lista">
+                  <li class="elemento">Esta directiva endica si puede o no ignorar cualquiera de las Options por las declaraciones en un archivo .htaccess.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lista">
+              <li class="elemento">Alias
+                <ul class="lista">
+                  <li class="elemento">Esta directiva hace accesibles a los directorios fuera del directorio indicado en la directiva DocumentRoot.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lista">
+              <li class="elemento">Redirect
+                <ul class="lista">
+                  <li class="elemento">Cuando se mueve a una página web, se puede utilizar esta directiva para crear asignaciones de la ubicación del archivo a un nuevo URL.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lista">
+              <li class="elemento">ErrorDocument
+                <ul class="lista">
+                  <li class="elemento">Esta directiva asocia un código de respuesta HTTP con un mensaje o una URL para que sea devuelto al cliente.</li>
+                </ul>
+              </li>
+            </ul>
+            <p><font color="red">Estas son solo algunas de la directivas que hemos usado a lo largo del curso, pero existen más y pueden verse en este</font> <a href="https://stuff.mit.edu/afs/athena/project/rhel-doc/3/rhel-rg-es-3/s1-apache-config.html" target="blank">enlace</a><font color="red">.</font></p>
         </section>
     </body>
 </html>

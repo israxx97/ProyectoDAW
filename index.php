@@ -70,7 +70,7 @@
                             </h3>
                             <!-- <p class="card-text mb-auto">Chollometro es una página que sube productos rebajados y ayuda a la página mediante promociones.</p> -->
                             <a href="../index.html">Accede al Index</a>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 <!-- <div class="col-md-6">
@@ -155,13 +155,13 @@
 
                     <div class="blog-post">
                         <h2 class="blog-post-title"><a href="html/U02_A03.html">U02 - A03</a></h2>
-                        <p class="blog-post-meta">Última actualización: Aún no se ha subido ningún fichero.</p>
+                        <p class="blog-post-meta">Última actualización: 02/04/2019, 23:46</p>
                         <p>En esta práctica encontraremos una breve descripción de los comandos, módulos y directivas usadas en el servidor web de Apache durante su configuración y administración.</p>
                     </div>
 
                     <div class="blog-post">
                         <h2 class="blog-post-title"><a href="html/U02_A04.html">U02 - A04</a></h2>
-                        <p class="blog-post-meta">Última actualización: Aún no se ha subido ningún fichero.</p>
+                        <p class="blog-post-meta">Última actualización: 02/04/2019, 23:19</p>
                         <p>En esta práctica configuraremos varios sitios virtuales con un archivo index.html, y accederemos a estos sitios con HTTP y HTTPS.</p>
                     </div>
 
@@ -176,7 +176,7 @@
                         <p class="blog-post-meta">Última actualización: Aún no se ha subido ningún fichero.</p>
                         <p>En esta práctica documentaremos la instalación y configuración del servicio DNS en Ubuntu.</p>
                     </div>
-                </div>   
+                </div>
 
                 <aside class="col-md-4 blog-sidebar">
                     <div class="p-3 mb-3 bg-light rounded">

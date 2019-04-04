@@ -114,49 +114,6 @@
                     </ul>
                     <img src="../webroot/images/U02_A02/image4.PNG" alt="image">
                     <p style="color: red">ATENCIÓN: Es importante reiniciar el servidor de apache después de estos pasos para que se produzcan los cambios, lo haremos con <b>sudo service apache2 restart</b>.</p>
-                    <ul class="lista">
-                        <li class="elemento">
-                            Creamos el directorio page_error en la siguiente ruta.
-                        </li>
-                    </ul>
-                    <img src="../webroot/images/U02_A02/image7.PNG" alt="image">
-                    <ul class="lista">
-                        <li class="elemento">
-                            Creamos el archivo html que queramos que se muestre cuando salte el error 404 dentro del directorio page_error.
-                        </li>
-                    </ul>
-                    <img src="../webroot/images/U02_A02/image8.PNG" alt="image">
-                    <ul class="lista">
-                        <li class="elemento">
-                            Editamos el archivo html creado en el punto anterior.
-                        </li>
-                    </ul>
-                    <img src="../webroot/images/U02_A02/image9.PNG" alt="image">
-                    <ul class="lista">
-                        <li class="elemento">
-                            Lo hacemos como html normal, en este caso solo haremos que nos muestre un h1.
-                        </li>
-                    </ul>
-                    <img src="../webroot/images/U02_A02/image10.PNG" alt="image">
-                    <ul class="lista">
-                        <li class="elemento">
-                            Crearemos y modificaremos .htaccess en la siguiente ruta.
-                        </li>
-                    </ul>
-                    <img src="../webroot/images/U02_A02/image11.PNG" alt="image">
-                    <ul class="lista">
-                        <li class="elemento">
-                            Escribiremos en .htaccess el siguiente contenido, en este caso controlaremos el error 404, pero podemos hacer con cualquier error cambiando el 404 por otro y la ruta del html que queramos mostrar.
-                        </li>
-                    </ul>
-                    <img src="../webroot/images/U02_A02/image12.PNG" alt="image">
-                    <ul class="lista">
-                        <li class="elemento">
-                            Accedemos a nuestro servidor desde el navegador con un path que no exista, nos mostrará el archivo html creado anteriormente.
-                        </li>
-                    </ul>
-                    <img src="../webroot/images/U02_A02/image13.PNG" alt="image">
-
                 </li>
                 <li class="elemento">
                     Configuracion mod_rewrite.
@@ -169,38 +126,255 @@
 
             <p class="ejercicio4" id="ejercicioEnunciado4">4.- Directiva ErrorDocument.</p>
             <ul class="lista">
-                <li class="elemento"></li>
+                <li class="elemento">
+                    Creamos el directorio page_error en la siguiente ruta.
+                </li>
             </ul>
+            <img src="../webroot/images/U02_A02/image7.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Creamos el archivo html que queramos que se muestre cuando salte el error 404 dentro del directorio page_error.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image8.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Editamos el archivo html creado en el punto anterior.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image9.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Lo hacemos como html normal, en este caso solo haremos que nos muestre un h1.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image10.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Crearemos y modificaremos .htaccess en la siguiente ruta.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image11.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Escribiremos en .htaccess el siguiente contenido, en este caso controlaremos el error 404, pero podemos hacer con cualquier error cambiando el 404 por otro y la ruta del html que queramos mostrar.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image12.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Accedemos a nuestro servidor desde el navegador con un path que no exista, nos mostrará el archivo html creado anteriormente.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image13.PNG" alt="image">
 
             <p class="ejercicio5" id="ejercicioEnunciado5">5.- Directiva Alias.</p>
             <ul class="lista">
-                <li class="elemento"></li>
+                <li class="elemento">
+                    Vamos al archivo alias.conf en /etc/apache2/mods-available/alias.conf.
+                </li>
             </ul>
+            <img src="../webroot/images/U02_A02/image15.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Lo editamos de la siguiente forma.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image16.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Creamos el directorio doc en /home/miadmin y ponemos a miadmin como propietario del directorio.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image17.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Podemos ver con el Alias no lleva al documento.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image18.PNG" alt="image">
 
             <p class="ejercicio6" id="ejercicioEnunciado6">6.- Directiva Redirect.</p>
             <ul class="lista">
-                <li class="elemento"></li>
+                <li class="elemento">
+                    En el archivo .htaccess añadimos la siguiente linea.
+                </li>
             </ul>
+            <img src="../webroot/images/U02_A02/image19.PNG" alt="image">
 
             <p class="ejercicio7" id="ejercicioEnunciado7">7.- Resolución de nombre /etc/hosts.</p>
             <ul class="lista">
-                <li class="elemento"></li>
+                <li class="elemento">
+                    Modificaremos el archivo hosts que se encuentra en /etc de la siguiente forma.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image20.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Ahora en el anfitrión en C:/Windows/System32/drivers/etc modificamos el archivo hosts.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image21.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Comprobamos que funciona escribiendo uno de los 5 nombres que hemos introducido.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image22.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Para comprobar la caché en el anfitrión usamos el comando ipconfig /displaydns y para borrar la caché ipconfig /flushdns.
+                </li>
             </ul>
 
             <p class="ejercicio8" id="ejercicioEnunciado8">8.- Sitios virtuales basados en nombre.</p>
             <ul class="lista">
-                <li class="elemento"></li>
+                <li class="elemento">
+                    Creamos los siguientes directorios.
+                </li>
             </ul>
+            <img src="../webroot/images/U02_A02/image23.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Creamos los usuarios israel, daw1 y daw2.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image24.PNG" alt="image">
+            <img src="../webroot/images/U02_A02/image25.PNG" alt="image">
+            <img src="../webroot/images/U02_A02/image26.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Cambiamos los propietarios de los directorios.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image27.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Cambiamos los permisos de los directorios.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image28.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Subimos los index a los directorias public_html.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image29.PNG" alt="image">
+            <img src="../webroot/images/U02_A02/image30.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Copiamos el archivo 000-default.conf con otro nombre.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image31.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Editamos la copia de la siguiente forma.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image32.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Checkeamos el fichero, activamos el sitio y reiniciamos el servicio.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image33.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Desactivamos el sitio 000-default.conf.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image34.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Copiaremos este fichero con los otros 2 sitios y los configuraremos como el de empresa1 pero con sus rutas.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image35.PNG" alt="image">
 
             <p class="ejercicio9" id="ejercicioEnunciado9">9.- Autenticación BASIC.</p>
             <ul class="lista">
-                <li class="elemento"></li>
+                <li class="elemento">
+                    Vamos a crear dos usuarios, profesor1 y profesor2
+                </li>
             </ul>
-
-            <p class="ejercicio10" id="ejercicioEnunciado10">10.- Autenticación REDIRECT.</p>
+            <img src="../webroot/images/U02_A02/image36.PNG" alt="image">
             <ul class="lista">
-                <li class="elemento"></li>
+                <li class="elemento">
+                    Comprobamos el fichero .htpasswd para ver que están creados
+                </li>
             </ul>
+            <img src="../webroot/images/U02_A02/image37.PNG" alt="image">
+            <img src="../webroot/images/U02_A02/image38.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Entramos con el usuario tunombre y creamos el directorio apuntes en public_html.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image39.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Comprobamos que el módulo auth-basic.load está activado.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image40.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Editamos el fichero tunombre.local.conf de la siguiente forma.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image41.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Reiniciamos el servicio apache e intentamos acceder al directorio apuntes, solo será accesible con profesor1 y profesor2.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image42.PNG" alt="image">
+            <img src="../webroot/images/U02_A02/image43.PNG" alt="image">
+            <img src="../webroot/images/U02_A02/image44.PNG" alt="image">
+            <img src="../webroot/images/U02_A02/image45.PNG" alt="image">
+
+            <p class="ejercicio10" id="ejercicioEnunciado10">10.- Autenticación DIGEST.</p>
+            <ul class="lista">
+                <li class="elemento">
+                    Vamos a crear dos usuarios, alumno1 y alumno2.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image46.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Comprobamos el archivo .htdigest para ver que están creados.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image47.PNG" alt="image">
+            <img src="../webroot/images/U02_A02/image48.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Entramos con el usuario tunombre y creamos un directorio usuarios en public_html.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image49.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Activamos el módulo auth_digest y reiniciamos el servicio
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image50.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Modificamos el fichero tunombre.local.conf de la siguiente forma.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image51.PNG" alt="image">
+            <ul class="lista">
+                <li class="elemento">
+                    Reiniciamos el servicio y probamos.
+                </li>
+            </ul>
+            <img src="../webroot/images/U02_A02/image52.PNG" alt="image">
+            <img src="../webroot/images/U02_A02/image53.PNG" alt="image">
+            <img src="../webroot/images/U02_A02/image54.PNG" alt="image">
+            <img src="../webroot/images/U02_A02/image55.PNG" alt="image">
         </section>
     </body>
 </html>
