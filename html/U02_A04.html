@@ -10,48 +10,66 @@
     <body class="container">
         <h1 id="indice" class="text-center">ÍNDICE - U02 - A04</h1>
         <section class="primeraSection">
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado1">1.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado2">2.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado3">3.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado4">4.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado5">5.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado6">6.- <em></em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado7">7.- <em></em></a></p>
+            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado1"><em>1.- Configuración del servidor para que se acceda a todos los sitios con HTTP y HTTPS.</em></a></p>
         </section>
         <section class="segundaSection">
-            <p class="ejercicio1" id="ejercicioEnunciado1">1.- </p>
+            <p class="ejercicio1" id="ejercicioEnunciado1">1.- Configuración del servidor para que se acceda a todos los sitios con HTTP y HTTPS.</p>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">En el /home del usuario vamos a crear la claves privadas.</li>
+              <img src="../webroot/images/U02_A04/image1.PNG" alt="image">
             </ul>
-            
-            <p class="ejercicio2" id="ejercicioEnunciado2">2.- </p>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">Ahora generamos la solicitud de certificado, haciendo lo mismo para fichero1 y fichero2.</li>
+              <img src="../webroot/images/U02_A04/image2.PNG" alt="image">
+              <img src="../webroot/images/U02_A04/image3.PNG" alt="image">
+              <img src="../webroot/images/U02_A04/image4.PNG" alt="image">
             </ul>
-            
-            <p class="ejercicio3" id="ejercicioEnunciado3">3.- </p>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">Autofirmaremos los certificados.</li>
+              <img src="../webroot/images/U02_A04/image5.PNG" alt="image">
+              <img src="../webroot/images/U02_A04/image6.PNG" alt="image">
+              <img src="../webroot/images/U02_A04/image7.PNG" alt="image">
             </ul>
-            
-            <p class="ejercicio4" id="ejercicioEnunciado4">4.- </p>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">Movemos las claves privadas y los certificados a las carpetas private y certs respectivamente.</li>
+              <img src="../webroot/images/U02_A04/image8.PNG" alt="image">
             </ul>
-            
-            <p class="ejercicio5" id="ejercicioEnunciado5">5.- </p>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">Vamos a esas carpetas y cambiamos el propietario y los permisos de las claves privadas y los certificados.</li>
+              <img src="../webroot/images/U02_A04/image9.PNG" alt="image">
             </ul>
-            
-            <p class="ejercicio6" id="ejercicioEnunciado6">6.- </p>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">Activaremos el módulo SSL desde la carpeta /etc/apache/mods-available y reiniciamos el servicio.</li>
+              <img src="../webroot/images/U02_A04/image10.PNG" alt="image">
             </ul>
-            
-            <p class="ejercicio7" id="ejercicioEnunciado7">7.- </p>
             <ul class="lista">
-                <li class="elemento"></li>
+              <li class="elemento">Vamos a /etc/apache2/sites-available y copiamos el archivo defaultssl.conf en la misma carpeta cambiándolo de nombre.</li>
+              <img src="../webroot/images/U02_A04/image21.PNG" alt="image">
+            </ul>
+            <ul class="lista">
+              <li class="elemento">Editamos el nuevo archivo de la siguiente forma.</li>
+              <img src="../webroot/images/U02_A04/image11.PNG" alt="image">
+            </ul>
+            <ul class="lista">
+              <li class="elemento">Copiamos el fichero del sitio renombrándolo para los otros dos sitios.</li>
+              <img src="../webroot/images/U02_A04/image12.PNG" alt="image">
+              <img src="../webroot/images/U02_A04/image13.PNG" alt="image">
+            </ul>
+            <ul class="lista">
+              <li class="elemento">Los editamos de la siguiente forma.</li>
+              <img src="../webroot/images/U02_A04/image14.PNG" alt="image">
+              <img src="../webroot/images/U02_A04/image15.PNG" alt="image">
+            </ul>
+            <ul class="lista">
+              <li class="elemento">Checkeamos el fichero, activamos el sitio y reiniciamos el servicio</li>
+              <img src="../webroot/images/U02_A04/image16.PNG" alt="image">
+              <img src="../webroot/images/U02_A04/image17.PNG" alt="image">
+            </ul>
+            <ul class="lista">
+              <li class="elemento">Desde el navegador accedemos a los sitios con https y accederá de forma segura.</li>
+              <img src="../webroot/images/U02_A04/image18.PNG" alt="image">
+              <img src="../webroot/images/U02_A04/image19.PNG" alt="image">
+              <img src="../webroot/images/U02_A04/image20.PNG" alt="image">
             </ul>
         </section>
     </body>
