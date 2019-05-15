@@ -1,445 +1,542 @@
 <!DOCTYPE html>
 <html lang="es-eu" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>U02_A01 - Isarel García Cabañeros</title>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="../webroot/css/U02_A01.css">
-    </head>
-    <body class="container">
-        <h1 id="indice" class="text-center">ÍNDICE - U02 - A01</h1>
-        <section class="primeraSection">
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado0"><em>0.- Información sobre el fichero de configuración de red.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado1"><em>1.- Configuración de la red.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado2"><em>2.- Configuración de las particiones del disco (500GB dinámico).</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado3"><em>3.- Creación del primer usuario.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado4"><em>4.- Cambiar configuración de teclado al español</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado5"><em>5.- Configuración del hostname.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado6"><em>6.- Comprobación del particionamiento de disco.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado7"><em>7.- Comprobación de SSH.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado8"><em>8.- Instalación de Apache.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado9"><em>9.- Establecimiento del ServerName para suprimir los errores de sintaxis.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado10"><em>10.- Ajustar el firewall para permitir el tráfico web.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado11"><em>11.- Instalación de PHP.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado12"><em>12.- Instalación de módulos de PHP.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado13"><em>13.- Prueba del procesador PHP en el servidor web.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado14"><em>14.- Creación y administración de usuarios.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado15"><em>15.- Instalación y configuración de MySQL.</em></a></p>
-            <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado16"><em>16.- Información adicional sobre el ufw.</em></a></p>
+<head>
+  <meta charset="utf-8">
+  <title>U02_A01 - Isarel García Cabañeros</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="../webroot/css/U02_A01.css">
+</head>
+<body class="container">
+  <h1 id="indice" class="text-center">ÍNDICE - U02 - A01</h1>
+  <section class="primeraSection">
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado0"><em>0.- Información sobre el fichero de configuración de red.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado1"><em>1.- Configuración de la red.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado2"><em>2.- Configuración de las particiones del disco (500GB dinámico).</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado3"><em>3.- Creación del primer usuario.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado4"><em>4.- Cambiar configuración de teclado al español</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado5"><em>5.- Configuración del hostname.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado6"><em>6.- Comprobación del particionamiento de disco.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado7"><em>7.- Comprobación de SSH.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado8"><em>8.- Instalación de Apache.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado9"><em>9.- Establecimiento del ServerName para suprimir los errores de sintaxis.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado10"><em>10.- Ajustar el firewall para permitir el tráfico web.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado11"><em>11.- Instalación de PHP.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado12"><em>12.- Instalación de módulos de PHP.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado13"><em>13.- Prueba del procesador PHP en el servidor web.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado14"><em>14.- Creación y administración de usuarios.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado15"><em>15.- Instalación y configuración de MySQL.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado16"><em>16.- Información adicional sobre el ufw.</em></a></p>
+    <p class="ejercicioEnunciado"><a href="#ejercicioEnunciado17"><em>17.- Información adicional sobre las directivas de php.ini.</em></a></p>
+  </section>
+  <hr>
+  <section class="segundaSection">
+    <p class="ejercicio0" id="ejercicioEnunciado0">0.- Información sobre el fichero de configuración de red.</p>
+    <ul class="lista">
+      <li class="elemento">
+        A continuación, se muestra donde se encuentra el fichero de configuración de la red por si acaso queremos volver a configurar algún parámetro de esta, ya que este apartado falta durante la instalación y configuración de Ubuntu y considero que es importante tenerlo en cuenta.
+      </li>
+    </ul>
+    <ul class="lista">
+      <li class="elemento">
+        El archivo a configurar es 50-cloud-init.yaml, que se encuentra en la siguiente ruta.
+      </li>
+    </ul>
+    <img src="../webroot/images/U02_A01/image50.PNG" alt="image">
+    <ul class="lista">
+      <li class="elemento">
+        Se verá con la misma estructura que la siguiente imagen.
+      </li>
+    </ul>
+    <img src="../webroot/images/U02_A01/image51.PNG" alt="image">
+    <p class="ejercicio1" id="ejercicioEnunciado1">1.- Configuración de la red.</p>
+    <ul class="lista">
+      <li class="elemento">La primera vez podemos configurar la red de forma gráfica.</li>
+    </ul>
+    <img src="../webroot/images/U02_A01/image1.PNG" alt="image">
+    <p style="color: red;">Importante recordar que al acabar con la configuración de la máquina y reiniciarla es
+      necesario cambiar la configuración a adaptador puente.</p>
+      <p class="ejercicio2" id="ejercicioEnunciado2">2.- Configuración de las particiones del disco (500GB dinámico).</p>
+      <ul class="lista">
+        <li class="elemento">Montaremos las particiones del disco duro de la siguiente forma.
+          <ul class="lista">
+            <li class="elemento">Partición de 100GB, formateado en ext4 y montado en raíz /.</li>
+            <li class="elemento">Partición de 396GB, formateado en ext4 y montado en /var.</li>
+            <li class="elemento">Partición de 4GB(3.997GB), formateado en swap.</li>
+          </ul>
+        </li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image2.PNG" alt="image">
+      <img src="../webroot/images/U02_A01/image3.PNG" alt="image">
+      <img src="../webroot/images/U02_A01/image4.PNG" alt="image">
+      <p class="ejercicio3" id="ejercicioEnunciado3">3.- Creación del primer usuario.</p>
+      <ul class="lista">
+        <li class="elemento">En este caso crearemos el usuaio miadmin de contraseña paso.</li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image5.PNG" alt="image">
+      <p class="ejercicio4" id="ejercicioEnunciado4">4.- Cambiar configuración de teclado al español.</p>
+      <ul class="lista">
+        <li class="elemento">Aún que hayamos elegido el teclado español durante la configuración, lo más
+          probable es que se encuentre el teclado inglés. Ejecutamos el siguiente comando.
+        </li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image6.PNG" alt="image">
+      <p class="ejercicio5" id="ejercicioEnunciado5">5.- Configuración del hostname.</p>
+      <ul class="lista">
+        <li class="elemento">Para camiar el hostname de la máquina ejecutamos el siguiente comando para
+          editar el archivo hostname.
+        </li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image7.PNG" alt="image">
+      <ul class="lista">
+        <li class="elemento">El problema es que al reiniciar la máquina el cambio no se guardará y volverá al
+          estado inicial, para hacerlo permanente ejecutamos el siguiento comando para
+          editar el archivo cloud.cfg.
+        </li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image8.PNG" alt="image">
+      <ul class="lista">
+        <li class="elemento">La línea siguiente la encontraremos en false, la cambiamos a true.</li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image9.PNG" alt="image">
+      <ul class="lista">
+        <li class="elemento">Al reiniciar la máquina veremos que ha cambiado, además si ejecutamos el
+          siguiente comando vemos que pone lo que pusimos en el archivo hostname.
+        </li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image10.PNG" alt="image">
+      <p class="ejercicio6" id="ejercicioEnunciado6">6.- Comprobación del particionamiento de disco.</p>
+      <ul class="lista">
+        <li class="elemento">Para ver las particiones inicialmente hechas ejecutamos el siguiente comando.</li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image11.PNG" alt="image">
+      <p class="ejercicio7" id="ejercicioEnunciado7">7.- Comprobación de SSH.</p>
+      <ul class="lista">
+        <li class="elemento">Para ver que el SSH esta activo ejecutamos el siguiente comando.</li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image12.PNG" alt="image">
+      <p class="ejercicio8" id="ejercicioEnunciado8">8.- Instalación de Apache.</p>
+      <ul class="lista">
+        <li class="elemento">Antes de su instalación hacemos un sudo apt-get update, tal y como lo hemos
+          hecho en otros puntos anteriores.
+          <br><br>
+          Cuando hayamos hecho esto, ejecutamos el siguiente comando para la instalación
+          de Apache.
+        </li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image13.PNG" alt="image">
+      <ul class="lista">
+        <li class="elemento">Para ver la versión de este ejecutamos el siguiente comando.</li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image14.PNG" alt="image">
+      <ul class="lista">
+        <li class="elemento">Ejecutamos el siguiente comando(se pueden ejecutar por separado).</li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image15.PNG" alt="image">
+      <p class="ejercicio9" id="ejercicioEnunciado9">9.- Establecimiento del ServerName para suprimir los errores de sintaxis.</p>
+      <ul class="lista">
+        <li class="elemento">Para hacer esto hay que editar el archivo apache2.conf con el siguiente comando.</li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image16.PNG" alt="image">
+      <ul class="lista">
+        <li class="elemento">En el archivo añadimos lo siguiente.</li>
+      </ul>
+      <img src="../webroot/images/U02_A01/image17.PNG" alt="image">
+      <ul class="lista">
+        <li class="elemento">Lo habremos hecho bien si al ejecutar el siguiente comando no nos pone encima
+          de Syntax OK el mensaje <font color="red">AH00558: apache2: Could not reliably determine the
+            server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName'
+            directive globally to suppress this message</font>.
+          </li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image18.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Reiniciamos el servicio de Apache.</li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image19.PNG" alt="image">
+        <p class="ejercicio10" id="ejercicioEnunciado10">10.- Ajustar el firewall para permitir el tráfico web.</p>
+        <ul class="lista">
+          <li class="elemento">Ejecutamos el siguiente comando para comprobar que el servidor permite el tráfico
+            HTTP y HTTPS.
+          </li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image20.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Si vemos Apache Full con el siguiente comando se debería ver que acepta el
+            tráfico en los puertos 80 y 443.
+          </li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image21.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Para permitir el tráfico entrante ejecutamos el siguiente comando.</li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image22.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Se puede ver que todo ha ido bien si en nuestro navegador escribimos
+            “http://ip_de_tu_servidor” y se muestra una pantalla con el título de Apache2
+            Ubuntu Default Page.
+          </li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image23.PNG" alt="image">
+        <p class="ejercicio11" id="ejercicioEnunciado11">11.- Instalación de PHP.</p>
+        <ul class="lista">
+          <li class="elemento">En la instalación de PHP instalaremos otros 2 paquetes además del propio PHP.
+            <ul class="lista">
+              <li class="elemento">libapache2-mod-php. Este paquete proporciona el módulo PHP para el
+                servidor web Apache2.
+              </li>
+              <li class="elemento">php-mysql. Este paquete permite la conexión entre un programa PHP con
+                bases de datos en MySQL.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>Para ello ejecutaremos el siguiente comando.</p>
+        <img src="../webroot/images/U02_A01/image24.PNG" alt="image">
+        <p style="color: red;">Si no funciona la instalación junta, se podrá instalar por separado.</p>
+        <ul class="lista">
+          <li class="elemento">A la hora de ejecutar un index, por defecto el servidor va a leer primero una
+            extensión .html antes que .php, nosotros queremos que lea primero la
+            extensión .php, por eso vamos a editar el siguiente archivo, lo que hace este es
+            leer archivos por preferencia según el orden en que estén colocados.
+          </li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image25.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Esto es lo que hay al entrar sin modificar nada.</li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image26.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Deberá estar de la siguiente manera.</li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image49.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Reiniciamos el servicio de Apache.</li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image27.PNG" alt="image">
+        <p class="ejercicio12" id="ejercicioEnunciado12">12.- Instalación de módulos de PHP.</p>
+        <ul class="lista">
+          <li class="elemento">Podemos ver todos los módulos disponibles con el siguiente comando.</li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image28.PNG" alt="image">
+        <p style="color: red;">Para mover arriba/abajo usamos las flechas del teclado, y para salir pulsamos la q.</p>
+        <ul class="lista">
+          <li class="elemento">Para ver toda la información de cada módulo usamos el comando “apt-cache show
+            nombre_del_paquete”.
+          </li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image29.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Y para instalar como hemos hecho con el resto de cosas.</li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image30.PNG" alt="image">
+        <p class="ejercicio13" id="ejercicioEnunciado13">13.- Prueba del procesador PHP en el servidor web.</p>
+        <ul class="lista">
+          <li class="elemento">Para crear nuestro primer programa PHP ejecutamos el comando “sudo nano /etc/
+            var/www/nombre_del_programa.php”.
+          </li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image31.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Escribimos un pequeño programa para probar que funciona.</li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image32.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Escribimos en nuestro navegador
+            “http://ip_de_tu_servidor/nombre_del_programa.php”, y si hemos escrito el código
+            del ejemplo de la imagen anterior aparecerá lo siguiente.
+          </li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image33.PNG" alt="image">
+        <p class="ejercicio14" id="ejercicioEnunciado14">14.- Creación y administración de usuarios.</p>
+        <ul class="lista">
+          <li class="elemento">Creamos el usuario con el siguiente comando(operador web es el nombre del
+            usuario).
+          </li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image34.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Al ejecutar el comando nos pide toda la información del usuario que queremos
+            crear.
+          </li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image35.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Comprobamos que está creado con el siguiente comando.</li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image36.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Para ver el propietario de un directorio o archivo ejecutamos el siguiente comando
+            con el path del mismo.
+          </li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image37.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Para cambiar el propietario ejecutamos el siguiente comando.</li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image38.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Podemos comprobar con el comando antes ejecutado que ahora ya no es el root,
+            sino que es operadorweb.
+          </li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image39.PNG" alt="image">
+        <ul class="lista">
+          <li class="elemento">Ahora cambiaremos los permisos del directorio con el siguiente comando.</li>
+        </ul>
+        <img src="../webroot/images/U02_A01/image40.PNG" alt="image">
+        <p style="color: red;">Como puedes observar en los comandos anteriores hemos escrito -R en algunos
+          de ellos, esto significa que el comando que se ejecute se ejecute recursivamente,
+          es decir, que afecte a dicho archivo/directorio y a sus hijos.</p>
+          <p class="ejercicio15" id="ejercicioEnunciado15">15.- Instalación y configuración de MySQL.</p>
+          <ul class="lista">
+            <li class="elemento">Para instalar MySQL ejecutamos el siguiente comando.</li>
+          </ul>
+          <img src="../webroot/images/U02_A01/image41.PNG" alt="image">
+          <ul class="lista">
+            <li class="elemento">Para entrar por primera vez ejecutamos el siguiente comando.</li>
+          </ul>
+          <img src="../webroot/images/U02_A01/image42.PNG" alt="image">
+          <p style="color: red;">Es necesario poner el sudo para lo que se explicará a continuación.</p>
+          <ul class="lista">
+            <li class="elemento">Para esta primera vez al no tener ninguna contraseña establecida para el root en el
+              momento en el que pida la contraseña lo dejaremos en blanco y estaremos dentro
+              de la consola MySQL.
+              <br><br>
+              En el caso de que hayamos entrado sin el sudo e intentemos entrar con el mismo
+              método nos denegará el acceso.
+            </li>
+          </ul>
+          <img src="../webroot/images/U02_A01/image43.PNG" alt="image">
+          <ul class="lista">
+            <li class="elemento">Ahora que estamos dentro de la consola MySQL ejecutamos el siguiente comando
+              para establecer una contraseña para el root.
+            </li>
+          </ul>
+          <img src="../webroot/images/U02_A01/image44.PNG" alt="image">
+          <ul class="lista">
+            <li class="elemento">Como podemos ver al haber establecido una contraseña, ya no funciona el método
+              de antes para entrar.
+            </li>
+          </ul>
+          <img src="../webroot/images/U02_A01/image45.PNG" alt="image">
+          <ul class="lista">
+            <li class="elemento">
+              Lo siguiente es opcional, podemos ejecutar el siguiente comando de seguridad
+              para eliminar algunas configuraciones peligrosas y bloquear un poco el acceso a
+              nuestras bases de datos.
+            </li>
+          </ul>
+          <img src="../webroot/images/U02_A01/image46.PNG" alt="image">
+          <ul class="lista">
+            <li class="elemento">Nos hará varias preguntas sobre el nivel de segurad de contraseñas que
+              queremos, etc…
+            </li>
+          </ul>
+          <img src="../webroot/images/U02_A01/image47.PNG" alt="image">
+          <img src="../webroot/images/U02_A01/image48.PNG" alt="image">
+          <p class="ejercicio16" id="ejercicioEnunciado16">16.- Información adicional sobre el ufw.</p>
+          <ul class="lista">
+            <li class="elemento">Uncomplicated Firewall (ufw) es un cortafuegos diseñado para ser de fácil uso desarrollado por Ubuntu.<br><br>En la siguiente tabla podemos ver las funciones que se pueden realizar con ufw y sus comandos en Ubuntu.</li>
+          </ul>
+          <table border="1" class="table">
+            <tr class="fila">
+              <th style="text-align: center;" class="title">Función</th>
+              <th style="text-align: center;" class="title">Comando</th>
+              <th style="text-align: center;" class="title">Comentario</th>
+            </tr>
+            <tr class="fila">
+              <td>Enciende el firewall.</td>
+              <td>sudo ufw enable</td>
+              <td></td>
+            </tr>
+            <tr class="fila">
+              <td>Apaga el firewall.</td>
+              <td>sudo ufw disable</td>
+              <td></td>
+            </tr>
+            <tr class="fila">
+              <td>Muestra el estatus.</td>
+              <td>sudo ufw status</td>
+              <td></td>
+            </tr>
+            <tr class="fila">
+              <td>Muestra el estatus detallado.</td>
+              <td>sudo ufw status verbose</td>
+              <td></td>
+            </tr>
+            <tr class="fila">
+              <td>Muestra Lista de Reglas Numerada.</td>
+              <td>sudo ufw status numbered</td>
+              <td></td>
+            </tr>
+            <tr class="fila">
+              <td>Bloquea todo el tráfico de entrada.</td>
+              <td>sudo ufw default deny incoming</td>
+              <td>Esto detendrá por omisión todo el tráfico entrante LAN desde Internet a menos que se especifique lo contrario en una regla.</td>
+            </tr>
+            <tr class="fila">
+              <td>Permite todo el tráfico de entrada.</td>
+              <td>sudo ufw default allow incoming</td>
+              <td>Esto permitirá por omisión todo el tráfico entrante LAN a menos que se especifique lo contrario en una regla.</td>
+            </tr>
+            <tr class="fila">
+              <td>Bloquea todo el tráfico saliente.</td>
+              <td>sudo ufw default deny outgoing</td>
+              <td>Esto detendrá por omisión todo el tráfico saliente hacia Internet LAN a menos que se especifique lo contrario en una regla.</td>
+            </tr>
+            <tr class="fila">
+              <td>Permite todo el tráfico saliente.</td>
+              <td>sudo ufw default allow outgoing</td>
+              <td>Esto permitirá por omisión todo el tráfico saliente hacia Internet LAN a menos que se especifique lo contrario en una regla.</td>
+            </tr>
+            <tr class="fila">
+              <td>Bloquea el puerto 22.</td>
+              <td>sudo ufw deny 22</td>
+              <td>Esto detendrá a cualquiera en Internet que intente conectarse a dispositivos en el LAN usando SSH.</td>
+            </tr>
+            <tr class="fila">
+              <td>Permite el puerto 22.</td>
+              <td>sudo ufw allow 22</td>
+              <td>Esto permitirá a cualquiera en Internet conectarse a dispositivos en el LAN usando SSH.</td>
+            </tr>
+            <tr class="fila">
+              <td>Bloquea el puerto 22 solo para una persona específica.</td>
+              <td>sudo ufw deny from 220.60.90.55 to any port 22</td>
+              <td>Esto detendrá a la dirección IP 220.60.90.55 conectarse a dispositivos en el LAN usando SSH.</td>
+            </tr>
+            <tr class="fila">
+              <td>Permite el puerto 22 solo para una persona específica.</td>
+              <td>sudo ufw allow from 220.60.90.55 to any port 22</td>
+              <td>Esto permitirá a la dirección IP 220.60.90.55 conectarse a dispositivos en el LAN usando SSH.</td>
+            </tr>
+            <tr class="fila">
+              <td>Bloquea el puerto 22 solo para una red específica.</td>
+              <td>sudo ufw deny from 220.60.90.0/24 to any port 22</td>
+              <td>Esto detendrá a cualquiera usando una dirección IP en el rango 220.60.90.1 - 220.60.90.254 conectarse a dispositivos en el LAN usando SSH.</td>
+            </tr>
+            <tr class="fila">
+              <td>Permite el puerto 22 solo para una red específica.</td>
+              <td>sudo ufw allow from 220.60.90.0/24 to any port 22</td>
+              <td>Esto permitirá a cualquiera usando una dirección IP en el rango 220.60.90.1 - 220.60.90.254 conectarse a dispositivos en el LAN usando SSH.</td>
+            </tr>
+            <tr class="fila">
+              <td>Bloquea el puerto 53 en el UDP.</td>
+              <td>sudo ufw deny 53/udp</td>
+              <td>Esto detendrá a cualquiera en Internet usando un DNS buscar dispositivos en el LAN.</td>
+            </tr>
+            <tr class="fila">
+              <td>Permite el puerto 53 en el UDP.</td>
+              <td>sudo ufw allow port 53</td>
+              <td>Esto permitirá a cualquiera en Internet hacer transacciones DNS sobre dispositivos en el LAN.</td>
+            </tr>
+            <tr class="fila">
+              <td>Permite un rango de puertos TCP.</td>
+              <td>sudo ufw allow 2500:5000/tcp</td>
+              <td>Esto permitirá a cualquiera en Internet comunicarse a cualquier puerto en el rango 2500 - 5000 en dispositivos en el LAN.</td>
+            </tr>
+            <tr class="fila">
+              <td>Elimina un número de regla.</td>
+              <td>sudo ufw delete 1</td>
+              <td>Esto borrará la primera regla en la lista de reglas.</td>
+            </tr>
+          </table>
+          <p class="ejercicio17" id="ejercicioEnunciado17">17.- Información adicional sobre las directivas de php.ini.</p>
+          <ul class="lista">
+            <li class="elemento">
+              Antes de todo, hay que indicar que, php.ini-development se usa para desarrollo, y php.ini-production, se usa para el entorno de explotación.
+            </li>
+          </ul>
+          <table border="1" class="table">
+            <tr class="fila">
+              <th style="text-align: center;" class="title">Desarrollo</th>
+              <th style="text-align: center;" class="title">Explotación</th>
+            </tr>
+            <tr class="fila">
+              <td>error_reporting = E_ALL</td>
+              <td>error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT</td>
+            </tr>
+            <tr class="fila">
+              <td>display_errors = On</td>
+              <td>display_errors = Off</td>
+            </tr>
+            <tr class="fila">
+              <td>display_startup_errors = On</td>
+              <td>display_startup_errors = Off</td>
+            </tr>
+            <tr class="fila">
+              <td>mysqlnd.collect_memory_stadistics = On</td>
+              <td>mysqlnd.collect_memory_stadistics = Off</td>
+            </tr>
+            <tr class="fila">
+              <td>zend.assertions = 1</td>
+              <td>zend.assertions = -1</td>
+            </tr>
+            <tr class="fila">
+              <td>;opcache.huge_code_pages = 0</td>
+              <td>;opcache.huge_code_pages = 1</td>
+            </tr>
+            <tr class="fila">
+              <td>;This is php.ini_development INI file.</td>
+              <td>;This is php.ini_production INI file.</td>
+            </tr>
+          </table>
+          <ul class="lista">
+            <li class="elemento">mysql.allow_persistent
+              <ul class="lista">
+                <li class="elemento">Se trata de una directiva de configuración de tipo boolean para dar permiso a conexiones persistentes al MySQL o no.</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="lista">
+            <li class="elemento">mysql.default_port
+              <ul class="lista">
+                <li class="elemento">Se trata de una directiva de tipo string e indica el número de puerto TCP predeterminado para usar cuando se conecta con el servidor de la base de datos si no hay otro puerto especificado.</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="lista">
+            <li class="elemento">mysql.default_host
+              <ul class="lista">
+                <li class="elemento">Se trata de una directiva de tipo string que indica el host del servidor predeterminado para usar cuando se conecta al servidor de la base de datos, si no hay otro host especificado. No se aplica en modo seguro de SQL.</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="lista">
+            <li class="elemento">mysql.default_user
+              <ul class="lista">
+                <li class="elemento">Se trata de una directiva de tipo string e indica el nombre de usuario predeterminado para usar cuando se conecta al servidor de la base de datos, si no hay otro nombre especificado. No se aplica en modo seguro de SQL.</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="lista">
+            <li class="elemento">error_reporting
+              <ul class="lista">
+                <li class="elemento">Establece el nivel de notificación de errores. El parámetro es o bien un valor de tipo integer, o bien, constantes con nombres.</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="lista">
+            <li class="elemento">display_errors
+              <ul class="lista">
+                <li class="elemento">Es un parámetro de tipo String que determina si los errores deberían ser impresos en pantalla como parte de la salida o deberían ocultarse al usuario.</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="lista">
+            <li class="elemento">display_startup_errors
+              <ul class="lista">
+                <li class="elemento">Se trata de un parámetro que, incluso cuando display_errors se encuentra activado los errores de PHP no se muestra, por esta razón se recomienda tener este parámetro desactivado, excepto si estamos depurando el programa.</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="lista">
+            <li class="elemento">mysqlnd.collect_memory_stadistics
+              <ul class="lista">
+                <li class="elemento">Este parámetro de tipo booleano habilita la recopilación de diversas estadísticas de memoria a la que se puede acceder a través de mysql_get_cache_client_stats(), y que también se muestran en la sección mysqlnd de la salida de la función phpinfo().</li>
+              </ul>
+            </li>
+          </ul>
         </section>
-        <hr>
-        <section class="segundaSection">
-            <p class="ejercicio0" id="ejercicioEnunciado0">0.- Información sobre el fichero de configuración de red.</p>
-            <ul class="lista">
-                <li class="elemento">
-                    A continuación, se muestra donde se encuentra el fichero de configuración de la red por si acaso queremos volver a configurar algún parámetro de esta, ya que este apartado falta durante la instalación y configuración de Ubuntu y considero que es importante tenerlo en cuenta.
-                </li>
-            </ul>
-            <ul class="lista">
-                <li class="elemento">
-                    El archivo a configurar es 50-cloud-init.yaml, que se encuentra en la siguiente ruta.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image50.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">
-                    Se verá con la misma estructura que la siguiente imagen.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image51.PNG" alt="image">
-            <p class="ejercicio1" id="ejercicioEnunciado1">1.- Configuración de la red.</p>
-            <ul class="lista">
-                <li class="elemento">La primera vez podemos configurar la red de forma gráfica.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image1.PNG" alt="image">
-            <p style="color: red;">Importante recordar que al acabar con la configuración de la máquina y reiniciarla es
-                necesario cambiar la configuración a adaptador puente.</p>
-            <p class="ejercicio2" id="ejercicioEnunciado2">2.- Configuración de las particiones del disco (500GB dinámico).</p>
-            <ul class="lista">
-                <li class="elemento">Montaremos las particiones del disco duro de la siguiente forma.
-                    <ul class="lista">
-                        <li class="elemento">Partición de 100GB, formateado en ext4 y montado en raíz /.</li>
-                        <li class="elemento">Partición de 396GB, formateado en ext4 y montado en /var.</li>
-                        <li class="elemento">Partición de 4GB(3.997GB), formateado en swap.</li>
-                    </ul>
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image2.PNG" alt="image">
-            <img src="../webroot/images/U02_A01/image3.PNG" alt="image">
-            <img src="../webroot/images/U02_A01/image4.PNG" alt="image">
-            <p class="ejercicio3" id="ejercicioEnunciado3">3.- Creación del primer usuario.</p>
-            <ul class="lista">
-                <li class="elemento">En este caso crearemos el usuaio miadmin de contraseña paso.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image5.PNG" alt="image">
-            <p class="ejercicio4" id="ejercicioEnunciado4">4.- Cambiar configuración de teclado al español.</p>
-            <ul class="lista">
-                <li class="elemento">Aún que hayamos elegido el teclado español durante la configuración, lo más
-                    probable es que se encuentre el teclado inglés. Ejecutamos el siguiente comando.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image6.PNG" alt="image">
-            <p class="ejercicio5" id="ejercicioEnunciado5">5.- Configuración del hostname.</p>
-            <ul class="lista">
-                <li class="elemento">Para camiar el hostname de la máquina ejecutamos el siguiente comando para
-                    editar el archivo hostname.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image7.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">El problema es que al reiniciar la máquina el cambio no se guardará y volverá al
-                    estado inicial, para hacerlo permanente ejecutamos el siguiento comando para
-                    editar el archivo cloud.cfg.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image8.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">La línea siguiente la encontraremos en false, la cambiamos a true.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image9.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Al reiniciar la máquina veremos que ha cambiado, además si ejecutamos el
-                    siguiente comando vemos que pone lo que pusimos en el archivo hostname.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image10.PNG" alt="image">
-            <p class="ejercicio6" id="ejercicioEnunciado6">6.- Comprobación del particionamiento de disco.</p>
-            <ul class="lista">
-                <li class="elemento">Para ver las particiones inicialmente hechas ejecutamos el siguiente comando.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image11.PNG" alt="image">
-            <p class="ejercicio7" id="ejercicioEnunciado7">7.- Comprobación de SSH.</p>
-            <ul class="lista">
-                <li class="elemento">Para ver que el SSH esta activo ejecutamos el siguiente comando.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image12.PNG" alt="image">
-            <p class="ejercicio8" id="ejercicioEnunciado8">8.- Instalación de Apache.</p>
-            <ul class="lista">
-                <li class="elemento">Antes de su instalación hacemos un sudo apt-get update, tal y como lo hemos
-                    hecho en otros puntos anteriores.
-                    <br><br>
-                    Cuando hayamos hecho esto, ejecutamos el siguiente comando para la instalación
-                    de Apache.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image13.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Para ver la versión de este ejecutamos el siguiente comando.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image14.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Ejecutamos el siguiente comando(se pueden ejecutar por separado).</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image15.PNG" alt="image">
-            <p class="ejercicio9" id="ejercicioEnunciado9">9.- Establecimiento del ServerName para suprimir los errores de sintaxis.</p>
-            <ul class="lista">
-                <li class="elemento">Para hacer esto hay que editar el archivo apache2.conf con el siguiente comando.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image16.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">En el archivo añadimos lo siguiente.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image17.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Lo habremos hecho bien si al ejecutar el siguiente comando no nos pone encima
-                    de Syntax OK el mensaje <font color="red">AH00558: apache2: Could not reliably determine the
-                    server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName'
-                    directive globally to suppress this message</font>.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image18.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Reiniciamos el servicio de Apache.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image19.PNG" alt="image">
-            <p class="ejercicio10" id="ejercicioEnunciado10">10.- Ajustar el firewall para permitir el tráfico web.</p>
-            <ul class="lista">
-                <li class="elemento">Ejecutamos el siguiente comando para comprobar que el servidor permite el tráfico
-                    HTTP y HTTPS.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image20.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Si vemos Apache Full con el siguiente comando se debería ver que acepta el
-                    tráfico en los puertos 80 y 443.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image21.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Para permitir el tráfico entrante ejecutamos el siguiente comando.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image22.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Se puede ver que todo ha ido bien si en nuestro navegador escribimos
-                    “http://ip_de_tu_servidor” y se muestra una pantalla con el título de Apache2
-                    Ubuntu Default Page.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image23.PNG" alt="image">
-            <p class="ejercicio11" id="ejercicioEnunciado11">11.- Instalación de PHP.</p>
-            <ul class="lista">
-                <li class="elemento">En la instalación de PHP instalaremos otros 2 paquetes además del propio PHP.
-                    <ul class="lista">
-                        <li class="elemento">libapache2-mod-php. Este paquete proporciona el módulo PHP para el
-                            servidor web Apache2.
-                        </li>
-                        <li class="elemento">php-mysql. Este paquete permite la conexión entre un programa PHP con
-                            bases de datos en MySQL.
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <p>Para ello ejecutaremos el siguiente comando.</p>
-            <img src="../webroot/images/U02_A01/image24.PNG" alt="image">
-            <p style="color: red;">Si no funciona la instalación junta, se podrá instalar por separado.</p>
-            <ul class="lista">
-                <li class="elemento">A la hora de ejecutar un index, por defecto el servidor va a leer primero una
-                    extensión .html antes que .php, nosotros queremos que lea primero la
-                    extensión .php, por eso vamos a editar el siguiente archivo, lo que hace este es
-                    leer archivos por preferencia según el orden en que estén colocados.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image25.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Esto es lo que hay al entrar sin modificar nada.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image26.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Deberá estar de la siguiente manera.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image49.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Reiniciamos el servicio de Apache.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image27.PNG" alt="image">
-            <p class="ejercicio12" id="ejercicioEnunciado12">12.- Instalación de módulos de PHP.</p>
-            <ul class="lista">
-                <li class="elemento">Podemos ver todos los módulos disponibles con el siguiente comando.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image28.PNG" alt="image">
-            <p style="color: red;">Para mover arriba/abajo usamos las flechas del teclado, y para salir pulsamos la q.</p>
-            <ul class="lista">
-                <li class="elemento">Para ver toda la información de cada módulo usamos el comando “apt-cache show
-                    nombre_del_paquete”.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image29.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Y para instalar como hemos hecho con el resto de cosas.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image30.PNG" alt="image">
-            <p class="ejercicio13" id="ejercicioEnunciado13">13.- Prueba del procesador PHP en el servidor web.</p>
-            <ul class="lista">
-                <li class="elemento">Para crear nuestro primer programa PHP ejecutamos el comando “sudo nano /etc/
-                    var/www/nombre_del_programa.php”.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image31.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Escribimos un pequeño programa para probar que funciona.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image32.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Escribimos en nuestro navegador
-                    “http://ip_de_tu_servidor/nombre_del_programa.php”, y si hemos escrito el código
-                    del ejemplo de la imagen anterior aparecerá lo siguiente.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image33.PNG" alt="image">
-            <p class="ejercicio14" id="ejercicioEnunciado14">14.- Creación y administración de usuarios.</p>
-            <ul class="lista">
-                <li class="elemento">Creamos el usuario con el siguiente comando(operador web es el nombre del
-                    usuario).
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image34.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Al ejecutar el comando nos pide toda la información del usuario que queremos
-                    crear.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image35.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Comprobamos que está creado con el siguiente comando.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image36.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Para ver el propietario de un directorio o archivo ejecutamos el siguiente comando
-                    con el path del mismo.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image37.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Para cambiar el propietario ejecutamos el siguiente comando.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image38.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Podemos comprobar con el comando antes ejecutado que ahora ya no es el root,
-                    sino que es operadorweb.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image39.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Ahora cambiaremos los permisos del directorio con el siguiente comando.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image40.PNG" alt="image">
-            <p style="color: red;">Como puedes observar en los comandos anteriores hemos escrito -R en algunos
-                de ellos, esto significa que el comando que se ejecute se ejecute recursivamente,
-                es decir, que afecte a dicho archivo/directorio y a sus hijos.</p>
-            <p class="ejercicio15" id="ejercicioEnunciado15">15.- Instalación y configuración de MySQL.</p>
-            <ul class="lista">
-                <li class="elemento">Para instalar MySQL ejecutamos el siguiente comando.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image41.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Para entrar por primera vez ejecutamos el siguiente comando.</li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image42.PNG" alt="image">
-            <p style="color: red;">Es necesario poner el sudo para lo que se explicará a continuación.</p>
-            <ul class="lista">
-                <li class="elemento">Para esta primera vez al no tener ninguna contraseña establecida para el root en el
-                    momento en el que pida la contraseña lo dejaremos en blanco y estaremos dentro
-                    de la consola MySQL.
-                    <br><br>
-                    En el caso de que hayamos entrado sin el sudo e intentemos entrar con el mismo
-                    método nos denegará el acceso.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image43.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Ahora que estamos dentro de la consola MySQL ejecutamos el siguiente comando
-                    para establecer una contraseña para el root.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image44.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Como podemos ver al haber establecido una contraseña, ya no funciona el método
-                    de antes para entrar.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image45.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">
-                    Lo siguiente es opcional, podemos ejecutar el siguiente comando de seguridad
-                    para eliminar algunas configuraciones peligrosas y bloquear un poco el acceso a
-                    nuestras bases de datos.
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image46.PNG" alt="image">
-            <ul class="lista">
-                <li class="elemento">Nos hará varias preguntas sobre el nivel de segurad de contraseñas que
-                    queremos, etc…
-                </li>
-            </ul>
-            <img src="../webroot/images/U02_A01/image47.PNG" alt="image">
-            <img src="../webroot/images/U02_A01/image48.PNG" alt="image">
-            <p class="ejercicio16" id="ejercicioEnunciado16">16.- Información adicional sobre el ufw.</p>
-            <ul class="lista">
-                <li class="elemento">Uncomplicated Firewall (ufw) es un cortafuegos diseñado para ser de fácil uso desarrollado por Ubuntu.<br><br>En la siguiente tabla podemos ver las funciones que se pueden realizar con ufw y sus comandos en Ubuntu.</li>
-            </ul>
-            <table border="1" class="table">
-                <tr class="fila">
-                    <th style="text-align: center;" class="title">Función</th>
-                    <th style="text-align: center;" class="title">Comando</th>
-                    <th style="text-align: center;" class="title">Comentario</th>
-                </tr>
-                <tr class="fila">
-                    <td>Enciende el firewall.</td>
-                    <td>sudo ufw enable</td>
-                    <td></td>
-                </tr>
-                <tr class="fila">
-                    <td>Apaga el firewall.</td>
-                    <td>sudo ufw disable</td>
-                    <td></td>
-                </tr>
-                <tr class="fila">
-                    <td>Muestra el estatus.</td>
-                    <td>sudo ufw status</td>
-                    <td></td>
-                </tr>
-                <tr class="fila">
-                    <td>Muestra el estatus detallado.</td>
-                    <td>sudo ufw status verbose</td>
-                    <td></td>
-                </tr>
-                <tr class="fila">
-                    <td>Muestra Lista de Reglas Numerada.</td>
-                    <td>sudo ufw status numbered</td>
-                    <td></td>
-                </tr>
-                <tr class="fila">
-                    <td>Bloquea todo el tráfico de entrada.</td>
-                    <td>sudo ufw default deny incoming</td>
-                    <td>Esto detendrá por omisión todo el tráfico entrante LAN desde Internet a menos que se especifique lo contrario en una regla.</td>
-                </tr>
-                <tr class="fila">
-                    <td>Permite todo el tráfico de entrada.</td>
-                    <td>sudo ufw default allow incoming</td>
-                    <td>Esto permitirá por omisión todo el tráfico entrante LAN a menos que se especifique lo contrario en una regla.</td>
-                </tr>
-                <tr class="fila">
-                    <td>Bloquea todo el tráfico saliente.</td>
-                    <td>sudo ufw default deny outgoing</td>
-                    <td>Esto detendrá por omisión todo el tráfico saliente hacia Internet LAN a menos que se especifique lo contrario en una regla.</td>
-                </tr>
-                <tr class="fila">
-                    <td>Permite todo el tráfico saliente.</td>
-                    <td>sudo ufw default allow outgoing</td>
-                    <td>Esto permitirá por omisión todo el tráfico saliente hacia Internet LAN a menos que se especifique lo contrario en una regla.</td>
-                </tr>
-                <tr class="fila">
-                    <td>Bloquea el puerto 22.</td>
-                    <td>sudo ufw deny 22</td>
-                    <td>Esto detendrá a cualquiera en Internet que intente conectarse a dispositivos en el LAN usando SSH.</td>
-                </tr>
-                <tr class="fila">
-                    <td>Permite el puerto 22.</td>
-                    <td>sudo ufw allow 22</td>
-                    <td>Esto permitirá a cualquiera en Internet conectarse a dispositivos en el LAN usando SSH.</td>
-                </tr>
-                <tr class="fila">
-                    <td>Bloquea el puerto 22 solo para una persona específica.</td>
-                    <td>sudo ufw deny from 220.60.90.55 to any port 22</td>
-                    <td>Esto detendrá a la dirección IP 220.60.90.55 conectarse a dispositivos en el LAN usando SSH.</td>
-                </tr>
-                <tr class="fila">
-                    <td>Permite el puerto 22 solo para una persona específica.</td>
-                    <td>sudo ufw allow from 220.60.90.55 to any port 22</td>
-                    <td>Esto permitirá a la dirección IP 220.60.90.55 conectarse a dispositivos en el LAN usando SSH.</td>
-                </tr>
-                <tr class="fila">
-                    <td>Bloquea el puerto 22 solo para una red específica.</td>
-                    <td>sudo ufw deny from 220.60.90.0/24 to any port 22</td>
-                    <td>Esto detendrá a cualquiera usando una dirección IP en el rango 220.60.90.1 - 220.60.90.254 conectarse a dispositivos en el LAN usando SSH.</td>
-                </tr>
-                <tr class="fila">
-                    <td>Permite el puerto 22 solo para una red específica.</td>
-                    <td>sudo ufw allow from 220.60.90.0/24 to any port 22</td>
-                    <td>Esto permitirá a cualquiera usando una dirección IP en el rango 220.60.90.1 - 220.60.90.254 conectarse a dispositivos en el LAN usando SSH.</td>
-                </tr>
-                <tr class="fila">
-                    <td>Bloquea el puerto 53 en el UDP.</td>
-                    <td>sudo ufw deny 53/udp</td>
-                    <td>Esto detendrá a cualquiera en Internet usando un DNS buscar dispositivos en el LAN.</td>
-                </tr>
-                <tr class="fila">
-                    <td>Permite el puerto 53 en el UDP.</td>
-                    <td>sudo ufw allow port 53</td>
-                    <td>Esto permitirá a cualquiera en Internet hacer transacciones DNS sobre dispositivos en el LAN.</td>
-                </tr>
-                <tr class="fila">
-                    <td>Permite un rango de puertos TCP.</td>
-                    <td>sudo ufw allow 2500:5000/tcp</td>
-                    <td>Esto permitirá a cualquiera en Internet comunicarse a cualquier puerto en el rango 2500 - 5000 en dispositivos en el LAN.</td>
-                </tr>
-                <tr class="fila">
-                    <td>Elimina un número de regla.</td>
-                    <td>sudo ufw delete 1</td>
-                    <td>Esto borrará la primera regla en la lista de reglas.</td>
-                </tr>
-            </table>
-        </section>
-    </body>
-</html>
+      </body>
+      </html>
