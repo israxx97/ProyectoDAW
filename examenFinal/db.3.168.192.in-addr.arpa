@@ -1,0 +1,17 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     igcdaw.israel.local. israel.garcab.educa.jcyl.es. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      igcdaw.israel.local.
+101     IN      PTR     igcdaw.israel.local.
+102     IN      PTR     igcee.israel.local.
+103     IN      PTR     igcw7.israel.local.
+104     IN      PTR     igcw10.israel.local.
+

@@ -209,6 +209,14 @@
                             <li><a href="https://github.com/israxx97/ProyectoDAW" target="blank"><img style="width: 15px; height: 15px;" src="./webroot/images/github-logo.png" alt="logo_github">&nbsp;GitHub</a></li>
                         </ol>
                     </div>
+
+                    <div class="p-3">
+                        <h4 class="font-italic">Examen en...</h4>
+                        <ol class="list-unstyled">
+                            <!-- <li><a href="https://www.instagram.com/forobet.oficial/">Instagram</a></li> -->
+                            <li><a href="./examenFinal/20190522_DAW_IsraelGarciaCabañeros.pdf" target="blank">Examen</a></li>
+                        </ol>
+                    </div>
                 </aside><!-- /.blog-sidebar -->
             </div><!-- /.row -->
         </main><!-- /.container -->
