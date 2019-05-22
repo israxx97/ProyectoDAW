@@ -1,0 +1,19 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     igcdaw.israel.local. israel.garcab.educa.jcyl.es. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      igcdaw.israel.local.
+igcdaw  IN      A       192.168.3.101
+igcee   IN      A       192.168.3.102
+igcw7   IN      A       192.168.3.103
+igcw10  IN      A       192.168.3.104
+ftp     IN      CNAME   igcdaw.israel.local.
+www     IN      CNAME   igcdaw.israel.local.
+
